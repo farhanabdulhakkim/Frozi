@@ -1,0 +1,42 @@
+@import '../assets/styles/variables';
+
+.product-detail-page {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $spacing-large;
+  max-width: 1100px;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .product-detail-image img {
+    width: 100%;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+  }
+
+  .product-detail-info {
+    .product-title {
+      font-family: $font-secondary;
+      font-size: 2.8rem;
+      margin-bottom: $spacing-medium;
+    }
+
+    .product-price {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: $color-primary;
+      margin-bottom: $spacing-large;
+    }
+
+    .product-description {
+      font-size: 1rem;
+      line-height: 1.8;
+      margin-bottom: $spacing-large;
+      color: #555;
+    }
+  }
+}

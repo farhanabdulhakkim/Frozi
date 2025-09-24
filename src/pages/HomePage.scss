@@ -1,0 +1,28 @@
+@import '../assets/styles/variables';
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 60vh;
+  padding: 0 $spacing-large;
+  
+  // You would ideally place a high-quality background image here
+  // background: url('../assets/images/hero-background.jpg') no-repeat center center/cover;
+  background-color: #f9f9f9;
+
+  h1 {
+    font-family: $font-secondary;
+    font-size: 3.5rem;
+    margin-bottom: $spacing-medium;
+    color: $color-primary;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: $spacing-large;
+  }
+}

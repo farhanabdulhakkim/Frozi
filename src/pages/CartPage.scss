@@ -1,0 +1,125 @@
+@import '../assets/styles/variables';
+
+.cart-page {
+  max-width: 900px;
+  margin: 0 auto;
+
+  .page-title {
+    font-family: $font-secondary;
+    font-size: 2.5rem;
+    margin-bottom: $spacing-large;
+    text-align: center;
+  }
+}
+
+.empty-cart {
+  text-align: center;
+  p {
+    font-size: 1.1rem;
+    margin-bottom: $spacing-large;
+  }
+}
+
+.cart-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: $spacing-large;
+  align-items: flex-start;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: $spacing-medium;
+  padding: $spacing-medium 0;
+  border-bottom: 1px solid $color-border;
+
+  .cart-item-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: $border-radius;
+  }
+
+  .cart-item-details {
+    flex-grow: 1;
+
+    .cart-item-name {
+      font-weight: 600;
+      display: block;
+      margin-bottom: $spacing-small;
+    }
+
+    .quantity-controls {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 8px;
+
+      button {
+        width: 30px;
+        height: 30px;
+        border: 1px solid $color-border;
+        background-color: #fff;
+        border-radius: 50%;
+        font-size: 1.2rem;
+        cursor: pointer;
+        transition: background-color $transition-speed;
+
+        &:hover {
+          background-color: #f9f9f9;
+        }
+      }
+    }
+  }
+  
+  .cart-item-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+    
+    .cart-item-price {
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .remove-btn {
+      background: none;
+      border: none;
+      color: #999;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: color $transition-speed;
+
+      &:hover {
+        color: $color-primary;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.cart-summary {
+  border: 1px solid $color-border;
+  border-radius: $border-radius;
+  padding: $spacing-large;
+  background-color: #fdfdfd;
+
+  .summary-title {
+    font-size: 1.5rem;
+    margin-bottom: $spacing-medium;
+  }
+
+  .summary-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: $spacing-large;
+  }
+
+  .btn {
+    width: 100%;
+  }
+}

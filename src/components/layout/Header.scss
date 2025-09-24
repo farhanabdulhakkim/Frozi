@@ -1,0 +1,25 @@
+@import '../../assets/styles/variables';
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $spacing-medium $spacing-large;
+  border-bottom: 1px solid $color-border;
+  background-color: $color-background;
+  
+  // Optional: Increase header height slightly for more space
+  height: 90px; 
+
+  .logo-link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .logo-image {
+    // INCREASED: Changed height from 40px to 55px for a more prominent look
+    height: 100px; 
+    width: auto; // Keep this as auto to maintain aspect ratio
+  }
+}

@@ -1,0 +1,45 @@
+@import '../assets/styles/variables';
+
+.checkout-page {
+  max-width: 600px;
+  margin: 0 auto;
+
+  .page-title {
+    text-align: center;
+    font-family: $font-secondary;
+    font-size: 2.5rem;
+    margin-bottom: $spacing-large;
+  }
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: $spacing-medium;
+  background-color: #fdfdfd;
+  padding: $spacing-large;
+  border: 1px solid $color-border;
+  border-radius: $border-radius;
+
+  h2 {
+    margin-bottom: $spacing-small;
+    font-size: 1.5rem;
+  }
+
+  input {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid $color-border;
+    border-radius: $border-radius;
+    transition: border-color $transition-speed;
+
+    &:focus {
+      outline: none;
+      border-color: $color-primary;
+    }
+  }
+
+  .btn {
+    margin-top: $spacing-medium;
+  }
+}

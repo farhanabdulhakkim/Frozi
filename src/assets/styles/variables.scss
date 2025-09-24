@@ -1,0 +1,20 @@
+// --- Typography ---
+$font-primary: 'Helvetica Neue', 'Segoe UI', Arial, sans-serif;
+$font-secondary: 'Georgia', 'Times New Roman', serif; // For headings or special text
+
+// --- Colors ---
+$color-background: #FFFFFF;
+$color-text: #222222;
+$color-primary: #1a1a1a;       // A deep, elegant black
+$color-accent: #d4af37;        // A subtle gold accent for a premium touch
+$color-border: #eaeaea;
+
+// --- Spacing & Sizing ---
+$spacing-small: 8px;
+$spacing-medium: 16px;
+$spacing-large: 32px;
+
+// --- Effects ---
+$box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+$border-radius: 8px;
+$transition-speed: 0.3s ease;

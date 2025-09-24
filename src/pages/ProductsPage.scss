@@ -1,0 +1,19 @@
+@import '../assets/styles/variables';
+
+.products-page {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .page-title {
+    text-align: center;
+    font-family: $font-secondary;
+    font-size: 2.5rem;
+    margin-bottom: $spacing-large;
+  }
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: $spacing-large;
+}

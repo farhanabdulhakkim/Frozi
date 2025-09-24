@@ -1,0 +1,33 @@
+@import '../../assets/styles/variables';
+
+.btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: $border-radius;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all $transition-speed;
+  letter-spacing: 0.5px;
+
+  &.btn-primary {
+    background-color: $color-primary;
+    color: $color-background;
+
+    &:hover {
+      background-color: lighten($color-primary, 10%);
+      transform: translateY(-2px);
+    }
+  }
+
+  &.btn-secondary {
+    background-color: transparent;
+    color: $color-primary;
+    border: 2px solid $color-primary;
+
+    &:hover {
+      background-color: $color-primary;
+      color: $color-background;
+    }
+  }
+}

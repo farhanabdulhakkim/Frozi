@@ -1,0 +1,32 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Gold Signet Ring",
+      "price": 299,
+      "imageUrl": "/images/1.jpg",
+      "description": "A timeless signet ring crafted from 14k solid gold, perfect for everyday elegance."
+    },
+    {
+      "id": 2,
+      "name": "Leather Chronograph Watch",
+      "price": 450,
+      "imageUrl": "/images/2.jpg",
+      "description": "Featuring a genuine leather strap and a precision chronograph movement, this watch combines classic style with modern functionality."
+    },
+    {
+      "id": 3,
+      "name": "Silk Pocket Square",
+      "price": 75,
+      "imageUrl": "/images/3.jpg",
+      "description": "Hand-rolled from the finest Italian silk, this pocket square adds a dash of sophistication to any jacket."
+    },
+    {
+      "id": 4,
+      "name": "Silver Cufflinks",
+      "price": 150,
+      "imageUrl": "/images/4.jpg",
+      "description": "Minimalist silver cufflinks with a brushed finish, designed to complement a modern wardrobe."
+    }
+  ]
+}
